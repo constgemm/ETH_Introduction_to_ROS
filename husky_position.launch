@@ -1,0 +1,18 @@
+<launch>
+	<param name="use_sim_time" value="true" />
+
+	<include file="$(find husky_description)/launch/description.launch"/>
+	
+	<node name="ekf_localization_node" pkg="robot_localization" type="ekf_localization_node" args="joint_states">
+		<rosparam command="load" file="$(find husky_control)/config/localization.yaml"/>
+	</node>		
+	
+	<!--<node pkg="rosbag" type="play" name="player" output="screen" args="clock /home/student/catkin_ws/husky_navigation.bag"/>-->
+	
+	<node name="robot_state_publisher2" pkg="robot_state_publisher" type="robot_state_publisher" />
+	
+
+	<node name="rqt_multiplot" pkg="rqt_multiplot" type="rqt_multiplot"/>
+	<node name="rviz" pkg="rviz" type="rviz"/>
+
+</launch>

@@ -1,0 +1,10 @@
+sub_topic_name: /scan
+sub_queue_size: 10
+pub_topic_name_vel: /cmd_vel
+pub_queue_size_vel: 10
+pub_topic_name_marker: /visualization_marker
+pub_queue_size_marker: 100
+
+
+p_gain: 1
+forward_drive: 4
