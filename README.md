@@ -1,4 +1,4 @@
-# ROS Course ETH 2020
+# Programming for Robotics - Introduction to ROS at ETH 2020
 day 1:
 add teleop_twist_keyboard to your git folder (either by download from GitHub and moving it to the git folder in your explorer or by using git clone <...> in the command line
 use the launch file called teleop_twist_keyboard.launch and start it from your src directory in the terminal using roslaunch teleop_twist_keyboard.launch (Make sure you add the path to the ~/git/teleop_twist_keyboard file as explained in the lecture.)
